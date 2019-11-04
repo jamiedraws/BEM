@@ -153,11 +153,11 @@ Maybe, I could use BEM to name my classes.
 
 Now let's break this down. What does this mean?
 
-`.header` is my module. It's the very thing I'm styling the header with.
+`.header` is my module. It's the very thing I'm styling the header with. It is the **B** in B.E.M. _a.k.a. the block_.
 
-`.header__logo` and `.header__title` are the children of `.header`, the parent. The `__` means there is a clear parent to child relationship.
+`.header__logo` and `.header__title` are the children of `.header`, the parent. The `__` means there is a clear parent to child relationship. It is the **E** in B.E.M. _a.k.a. the element_.
 
-`.header--dark-theme` is not a child of `.header` at all. Instead, it is an extension or modifier of `.header` itself. If `.header` is the parent, then think of `.header--dark-theme` as the aunt. That's what the `--` means.
+`.header--dark-theme` is not a child of `.header` at all. Instead, it is an extension or modifier of `.header` itself. If `.header` is the parent, then think of `.header--dark-theme` as the aunt. That's what the `--` means. It is the **M** in B.E.M. _a.k.a. the modifier_.
 
 Again, if we're looking at this as if it were a family tree, the `__` symbol means the child of the parent module, while the `--` symbol means sibling of the parent module. That's the whole point of BEM.
 
@@ -169,3 +169,8 @@ Again, if we're looking at this as if it were a family tree, the `__` symbol mea
 ```
 
 This idea of family and these two symbols is a simple idea our team can understand and make sense of. If we all practice this, our CSS has a better chance to communicate with our peers, exactly what it's meant to do.
+
+If the next guy understands what your CSS or my CSS does, instead of creating problems, it can create opportunities in that the next guy can maintain the code by:
+
+-   Introducing new elements to the block
+-   Extending the block with a modifier
