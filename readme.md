@@ -1,98 +1,67 @@
 <!-- Headings -->
 
-# Heading 10
+# CSS Coding Practices
 
-## Heading 2
+## The Next Guy's Problem
 
-### Heading 3
+Let's imagine we're putting together a header on a webpage. What can I put inside of a header? Let's start with something simple, like a logo and a title. So, let's imagine what this could look like in html.
 
-#### Heading 4
-
-##### Heading 5
-
-###### Heading 6
-
-<!-- Italics -->
-
-_This text_ is italic
-
-_This text_ is italic
-
-<!-- Strong -->
-
-**This text** is strong
-
-**This text** is strong
-
-<!-- Strikethrough -->
-
-~~This text~~ is strikethrough
-
-<!-- Horizontal Rule -->
-
----
-
----
-
-<!-- Blockquote -->
-
-> This is a quote
-
-<!-- Links -->
-
-[Traversy Media](http://www.traversymedia.com "Travery Mediaz")
-
-<!-- UL -->
-
--   Item 1
--   Item 2
--   Item 3
-    -   Nested Item 1
-    -   Nested Item 2
-
-<!-- OL -->
-
-1. Item 1
-1. Item 2
-1. Item 3
-
-<!-- Inline Code Block -->
-
-`<p>This is a paragrpah</p>`
-
-<!-- Image -->
-
-![Markdown Logo](https://markdown-here.com/img/icon256.png)
-
-<!-- Github Markdown -->
-
-<!-- Code Blocks -->
-
-```bash
-    npm install
-    npm start
+```html
+<header>
+	<img src="logo.svg" />
+	<h1>Title of the website</h1>
+</header>
 ```
 
-```javascript
-function add(num1, num2) {
-	return num1 + num2;
+Now, let's imagine what my css would look like.
+
+```css
+header {
+}
+header img {
+}
+header h1 {
 }
 ```
 
-```python
-    def add (num1, num2):
-        return num1 + num2
+Sure, I could get by with this alone. However, header elements can be used to describe other relationships besides the website itself. For instance, I could use a header element to describe the header of an article or a quote or a sidebar. Imagine these headers having a different look and feel.
+
+The css I've written for the main header will also affect those other headers, whcih I probably don't want. This is where you'd start thinking about using css classes to solve the problem, right?
+
+```css
+.header {
+}
+.header-logo {
+}
+.header-title {
+}
 ```
 
-<!-- Tables -->
+Okay, now my css is separated from my html so I can choose which headers I want my styling to apply to.
 
-| Name     | Email          |
-| -------- | -------------- |
-| John Doe | john@gmail.com |
-| Jane Doe | jane@gmail.com |
+Imagine our website has two headers that look very similar to one another but are just colored differently. You're probably thinking about using the same css classes to handle most of the work, right? Okay, so say I do that. Now, they look exactly the same. So, how can I change the color for this other header?
 
-<!-- Task Lists -->
+Maybe, I just write another class that's supposed to overwrite the default styling.
 
--   [x] Task 1
--   [x] Task 2
--   [x] Task 3
+```css
+.header {
+}
+.header-logo {
+}
+.header-title {
+}
+.header-dark-theme {
+}
+```
+
+My `.header-dark-theme` class can override the default styling. I know this problem I'm trying to solve and I know exactly where to put it. I've figure it out, now I'm done and I can move on.
+
+6 months later, let's say you come along and maintain my css and you see these styles. You have to style another header similar to this but the html has been removed so you can't see how it was implemented before.
+
+Sooooo, forget the html. Okay, maybe you can just ask me, right? Nope. I took a PTO day, I'm somewhere where internet is pretty spotty so who knows when I'll see your text. Now ask youself, where the heck do you put these classes? Where was the `.header-dark-theme` supposed to go?
+
+If you don't know, are you likely to go and change my css? What if your changes to my code break something else? Well, you're probably going to decide it's just easier to style it from scratch, right?
+
+Now, you've solved your problem, you're done and ready to move on buuuuut, this website still lives on. So, what about the next guy that will look at both your code and my code 6 months from now and have to maintain that?
+
+What do you think the next guy is going to do?
