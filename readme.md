@@ -133,7 +133,7 @@ CSS shouldn't be this hard.... and it doesn't have to be.
 
 Let's say I want to start thinking about the next guy... that next guy could also be future me, okay? How can I clearly communicate what my CSS is supposed to do?
 
-Maybe, I could use BEM to name my classes.
+Maybe, I could use [BEM](http://getbem.com/ "Read more about what BEM is on their documentation website") to name my classes.
 
 ```css
 .header {
