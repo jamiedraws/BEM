@@ -1,5 +1,3 @@
-<!-- Headings -->
-
 # CSS Coding Practices
 
 ## The Next Guy's Problem
@@ -43,9 +41,9 @@ The CSS I've written for the main header will also affect those other headers, w
 }
 ```
 
-Okay, now my css is separated from my HTML so I can choose which headers I want my styling to apply to.
+Okay, now my CSS is separated from my HTML so I can choose which headers I want my styling to apply to.
 
-Imagine our website has two headers that look very similar to one another but are just colored differently. You're probably thinking about using the same css classes to handle most of the work, right? Okay, so say I do that. Now, they look exactly the same. So, how can I change the color for this other header?
+Imagine our website has two headers that look very similar to one another but are just colored differently. You're probably thinking about using the same classes to handle most of the work, right? Okay, so say I do that. Now, they look exactly the same. So, how can I change the color for this other header?
 
 Maybe, I just write another class that's supposed to overwrite the default styling.
 
@@ -69,7 +67,7 @@ My `.header-dark-theme` class can override the default styling. I know this prob
 
 6 months later, let's say you come along and maintain my css and you see these styles. You have to style another header similar to this but the HTML has been removed so you can't see how it was implemented before.
 
-Sooooo, forget the html. Okay, maybe you can just ask me, right? Nope. I took a PTO day, I'm somewhere where internet is pretty spotty so who knows when I'll see your text. Now ask youself, where the heck do you put these classes? Where was the `.header-dark-theme` supposed to go?
+Sooooo, forget the HTML. Okay, maybe you can just ask me, right? Nope. I took a PTO day, I'm somewhere where internet is pretty spotty so who knows when I'll see your text. Now ask youself, where the heck do you put these classes? Where was the `.header-dark-theme` supposed to go?
 
 If you don't know, are you likely to go and change my CSS? What if your changes to my code break something else? Well, you're probably going to decide it's just easier to style it from scratch, right?
 
