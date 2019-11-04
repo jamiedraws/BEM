@@ -1,5 +1,3 @@
-<!-- Headings -->
-
 # CSS Coding Practices
 
 ## The Next Guy's Problem
@@ -155,11 +153,11 @@ Now let's break this down. What does this mean?
 
 `.header` is my module. It's the very thing I'm styling the header with. It is the **B** in B.E.M. _a.k.a. the block_.
 
-`.header__logo` and `.header__title` are the children of `.header`, the parent. The `__` means there is a clear parent to child relationship. It is the **E** in B.E.M. _a.k.a. the element_.
+`.header__logo` and `.header__title` are the children of `.header`, the parent. The `__` _(double underscore)_ means there is a clear parent to child relationship. It is the **E** in B.E.M. _a.k.a. the element_.
 
-`.header--dark-theme` is not a child of `.header` at all. Instead, it is an extension or modifier of `.header` itself. If `.header` is the parent, then think of `.header--dark-theme` as the aunt. That's what the `--` means. It is the **M** in B.E.M. _a.k.a. the modifier_.
+`.header--dark-theme` is not a child of `.header` at all. Instead, it is an extension or modifier of `.header` itself. If `.header` is the parent, then think of `.header--dark-theme` as the aunt. That's what the `--` _(double hyphen)_ means. It is the **M** in B.E.M. _a.k.a. the modifier_.
 
-Again, if we're looking at this as if it were a family tree, the `__` symbol means the child of the parent module, while the `--` symbol means sibling of the parent module. That's the whole point of BEM.
+Again, if we're looking at this as if it were a family tree, the `__` symbol means the child of the parent module, while the `--` symbol means sibling of the parent module. Creating structure that can communicate clearly is the whole point of BEM.
 
 ```html
 <header class="header header--dark-theme">
