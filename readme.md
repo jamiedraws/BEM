@@ -1,4 +1,4 @@
-# CSS Coding Practices
+# Using BEM to Communicate CSS Solutions
 
 ## The Next Guy's Problem
 
