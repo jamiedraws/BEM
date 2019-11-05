@@ -2,6 +2,8 @@
 
 First things first! We have to ask the question, do I need BEM? Well, do you? The answer should always depend on what you're styling.
 
+Let's look at a couple of examples where we wouldn't need to use BEM.
+
 ## There is no Repeatable Design Pattern
 
 ```html
