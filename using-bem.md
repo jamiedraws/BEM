@@ -278,7 +278,7 @@ Let's review the list of things that I should be able to do, as the next guy.
 }
 ```
 
-Check it out. I'm able to reuse all of the styling that is defined in the `.header` module for 3 different headers and I'm using the modifiers `.header--post` and `.header--mini` to create variance.
+Check it out. I'm able to reuse all of the styling that is defined in the `.header` module for 3 different headers and I'm using the modifiers `.header--post` and `.header--mini` to create subtle variance.
 
 ## The Next Guy After Me
 
