@@ -246,7 +246,7 @@ Let's review the list of things that I should be able to do, as the next guy.
 -   [x] Was I able to maintain your code?
     -   I could read and understand what your code was doing
 -   [x] Was I able to improve your code?
-    -   I replaced two selectors with class names and followed BEM to define their relationship
+    -   I replaced two selectors with class names and followed BEM to create a relationship
 -   [x] Was I able to extend your code with my own code?
     -   I introduced a new class name into the module
 
@@ -284,8 +284,8 @@ Check it out. I'm able to reuse all of the styling that is defined in the `.head
 
 After I finish this project and move on, I can feel confident that the next guy can read my code.
 
-Given him understanding basic HTML & CSS and understanding how to read and write in the BEM format, the next guy should be able to maintain my code, improve my code and extend my code with his own code, just as I was able to do with you.
+Given his understanding of basic HTML & CSS and understanding how to read and write in the BEM format, the next guy should be able to maintain my code, improve my code and extend my code with his own code, just as I was able to do with you.
 
 Think about it. When code is complex or cryptic, it's hard for peers to understand it. If the next guy doesn't understand it, he won't maintain it. He will write it from scratch again and add it to the bottom of the code, and when he's done, the next guy after him will go through the same thing again. The code is untouchable and the maintainence cycle grows with more burden.
 
-When the code is simple and clear, it's easier for peers to understand it. The next guy can touch the code and make it better. The maintainence cycle grows with more certainty.
+When the code is simple and clear, it's easier for peers to understand it. The next guy can touch the code and make it better. The maintainence cycle grows with more clarity.
